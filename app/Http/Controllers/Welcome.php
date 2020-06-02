@@ -69,7 +69,7 @@ class Welcome extends Controller
     {
     	if($param == "auth")
     	{    						
-    		echo 'username : '.$request->input('username').'</br>';
+    		echo 'username : '.$request->input('username').',';
     		echo 'password : '.$request->input('password');    		
     	}    	
     }
@@ -77,7 +77,7 @@ class Welcome extends Controller
     {
     	if($param == "auth")
     	{    						
-    		echo 'username : '.$request->input('username').'</br>';
+    		echo 'username : '.$request->input('username').',';
     		echo 'password : '.$request->input('password');    	
     	}    
     }
