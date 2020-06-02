@@ -63,7 +63,7 @@ class Welcome extends Controller
             $auth = json_decode($data);
             if(($auth->auth_server == $this->key_auth)&&($auth->auth_client == sha1($this->key_client)))
 			{					
-    			echo $request->input('id');
+    			echo 'id : '.$request->input('id');
     		}
     	}
     }
@@ -75,8 +75,8 @@ class Welcome extends Controller
             $auth = json_decode($data);
             if(($auth->auth_server == $this->key_auth)&&($auth->auth_client == sha1($this->key_client)))
 			{					
-    			echo $request->input('username');
-    			echo $request->input('password');
+    			echo 'username : '.$request->input('username').'</br>';
+    			echo 'password : '.$request->input('password');
     		}
     	}    	
     }
@@ -88,8 +88,8 @@ class Welcome extends Controller
             $auth = json_decode($data);
             if(($auth->auth_server == $this->key_auth)&&($auth->auth_client == sha1($this->key_client)))
 			{					
-    			echo $request->input('username');
-    			echo $request->input('password');
+    			echo 'username : '.$request->input('username').'</br>';
+    			echo 'password : '.$request->input('password');
     		}
     	}    
     }
@@ -101,7 +101,7 @@ class Welcome extends Controller
             $auth = json_decode($data);
             if(($auth->auth_server == $this->key_auth)&&($auth->auth_client == sha1($this->key_client)))
 			{					
-    			echo $request->input('id');
+    			echo 'id : '.$request->input('id');
     		}
     	}
     }
