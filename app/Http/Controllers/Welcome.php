@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class Welcome extends Controller
 {
-    private $url_auth = "http://localhost/api/admin/auth/index";    
+    private $url_auth = "http://www.inspibook.com/wam/admin/auth/index";    
     private $key_auth = "b0652a54d94e01721c2241b29b8c4d5c"; 
 
     private $username = "asdi";
