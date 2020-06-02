@@ -62,30 +62,30 @@ class Welcome extends Controller
 
     	if($param == "auth")
     	{	    					
-    		echo $request->input('id');    		
+    		echo 'id : '.$request->input('id');    		
     	}
     }
     public function post(Request $request,$param)
     {
     	if($param == "auth")
     	{    						
-    		echo $request->input('username');
-    		echo $request->input('password');    		
+    		echo 'username : '.$request->input('username').'</br>';
+    		echo 'password : '.$request->input('password');    		
     	}    	
     }
     public function put(Request $request,$param)
     {
     	if($param == "auth")
     	{    						
-    		echo $request->input('username');
-    		echo $request->input('password');    	
+    		echo 'username : '.$request->input('username').'</br>';
+    		echo 'password : '.$request->input('password');    	
     	}    
     }
     public function delete(Request $request,$param)
     {
     	if($param == "auth")
     	{    						
-    		echo $request->input('id');    	
+    		echo 'id : '.$request->input('id');    	
     	}
     }
     public function raw(Request $request,$param)
